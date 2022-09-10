@@ -1,15 +1,20 @@
 import React from 'react';
 import './Card.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 
 class Card extends React.Component {
     render () {
         return (
         <>
-            <div className="card border-0">
-                <img src={this.props.data[this.props.nb].media.url} className="item card"/>
+            {/* <img src={require('../images/logo-2.svg')} alt="logo" width="250" height="80" class="hide d-inline-block align-text-top" /> */}
+            <div className='grow'>
+                <div className="card border-0 card-description">
+                    <img src={this.props.data[this.props.nb].media.url} alt={this.props.data[this.props.nb].media.alt} className="item card" />
+                </div>
+                <div className='places-description' dangerouslySetInnerHTML={{__html: this.props.data[this.props.nb].description}} />
             </div>
             <p className="flex-name">{this.props.data[this.props.nb].name}</p>
-            {/* <div className="container" dangerouslySetInnerHTML={{__html: this.state.data}} /> */}
         </>
         );
     }

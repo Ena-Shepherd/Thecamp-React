@@ -8,8 +8,8 @@ class Places extends React.Component {
   render () {
     return (
       <div className="places-container">
-      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" /> 
-        <div class="container text-center tab-pane in active">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" /> 
+        <div class="container text-center tab-pane toto">
           <div class="row">
             <div class="col-3">
               <Card data={this.props.data} nb="29"/>

@@ -1,6 +1,8 @@
 import React from 'react';
+import Body from './Body';
 import Places from "./Places"
 import "./Places.css"
+import Navbar from './Navbar';
 
 class Fetch extends React.Component {
     constructor() {
@@ -27,7 +29,9 @@ class Fetch extends React.Component {
           <>
             {(data && data[2]) &&
               <div>
-                <Places data={data}/>
+                <Body data={data} />
+                <Places data={data} />
+                <Navbar />
               </div>
             }
           </>

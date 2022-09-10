@@ -5,3 +5,34 @@
     font-size: 20px;
     font-weight: 700;
 }
+
+.places-description {
+    position: relative;
+    padding-top: 20px;
+}
+
+.card:hover {
+    transition: all 1s ease-in;
+    -webkit-filter: blur(5px); /* Chrome, Safari, Opera */
+    filter: blur(5px);
+}
+
+.grow {
+    border-radius: 10px;
+    height: 173px;
+    width: 300px;
+    float: left;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.grow:hover {
+    height: fit-content;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
