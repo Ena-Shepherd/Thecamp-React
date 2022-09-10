@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Test from './components/Test';
+import Fetch from './components/Fetcher';
+import Places from './components/Fetcher';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <BrowserRouter>
         <main>
           <Routes>
-            <Route path="/test" element={<Test />} />
+            <Route path="/" element={<Places />} />
           </Routes>
         </main>
       </BrowserRouter>
