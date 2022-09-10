@@ -5,12 +5,15 @@ import "./Places.css"
 
 class Places extends React.Component {
   render () {
-    return (  
+    return (
       <div className="places-container">
-        <div class="container text-center">
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" /> 
+        <div class="container text-center tab-pane in active">
           <div class="row">
             <div class="col-3">
-              <img src={this.props.data[29].media.url} className="item"/>
+              <div className="card border-0">
+                <img src={this.props.data[29].media.url} className="item card"/>
+              </div>
               <p className="flex-name">{this.props.data[29].name}</p>
 
               <img src={this.props.data[28].media.url} className="item" />
