@@ -1,19 +1,6 @@
 import React from 'react';
-import Compo1 from './Compo1';
-
-class Places extends React.Component {
-  render () {
-    console.log(this.data);
-    return (  
-      <>
-        <img src={this.props.data[29].media.url} />
-        <p>{this.props.data[29].baseline}</p>
-        <img src={this.props.data[2].galerie[0].url} />
-        <p>{this.props.data[2].name}</p>
-      </>
-    )
-  }
-}
+import Places from "./Places"
+import "./Places.css"
 
 class Fetch extends React.Component {
     constructor() {
@@ -35,7 +22,7 @@ class Fetch extends React.Component {
 
     render() {
       const data = this.state.ApiData;
-      Compo1.data = this.data;
+      Places.data = this.data;
         return (
           <>
             {(data && data[2]) &&

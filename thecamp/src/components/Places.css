@@ -1,0 +1,19 @@
+
+.places-container {
+    display:flex;
+    height: 500px;
+    border: 1px solid red;
+    margin : 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.item {
+    position: relative;
+    width: 22%;
+    height: 60%;
+    margin: 3px;
+    max-width: 100%;
+    
+}
