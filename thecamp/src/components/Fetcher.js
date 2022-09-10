@@ -28,10 +28,6 @@ class Fetch extends React.Component {
             {(data && data[2]) &&
               <div>
                 <Places data={data}/>
-
-                {/* examples of code fetch */}
-                {/* <p>{data[2].name}</p>
-              <img src={data[2].galerie[0].url} alt={data.name}></img> */}
               </div>
             }
           </>
