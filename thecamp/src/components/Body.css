@@ -9,6 +9,12 @@
     margin-left: auto;
 }
 
+.page-title {
+    position: fixed;
+    padding-top: 20%;
+    padding-left: 10%;
+}
+
 video {
     width: 100%;
     object-fit: scale-down;

@@ -9,7 +9,7 @@ const ImageSlider = (props) => {
     if (props.data[props.nb].galerie === undefined) {
         return (
             <>
-                <img src={props.data[props.nb].media.url} alt="whatever" className="image"/>
+                <img src={props.data[props.nb].media.url} alt="whatever" className="image-unic"/>
             </>
         );
     }

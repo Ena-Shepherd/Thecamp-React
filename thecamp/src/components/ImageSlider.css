@@ -12,6 +12,16 @@
     border-radius: 10px;
 }
 
+.image-unic {
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    margin-left: -25%;
+    margin-top: -12%;
+    justify-content: center;
+    border-radius: 10px;
+}
+
 .right-arrow {
     position: absolute;
     top: 50%;
