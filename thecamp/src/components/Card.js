@@ -8,7 +8,6 @@ class Card extends React.Component {
     render () {
         return (
         <>
-            {/* <img src={require('../images/logo-2.svg')} alt="logo" width="250" height="80" class="hide d-inline-block align-text-top" /> */}
             <div className='grow'>
                 <div className="card border-0 card-description">
                     <img src={this.props.data[this.props.nb].media.url} alt={this.props.data[this.props.nb].media.alt} className="item card" />
@@ -19,7 +18,10 @@ class Card extends React.Component {
                 />
                 <div className='places-description' dangerouslySetInnerHTML={{__html: this.props.data[this.props.nb].description}} />
             </div>
-            <p className="flex-name">{this.props.data[this.props.nb].name}</p>
+            <div className='flex-name'>
+                <p>{this.props.data[this.props.nb].name}</p>
+                <p className="flex-description">{this.props.data[this.props.nb].baseline}</p>
+            </div>
         </>
         );
     }

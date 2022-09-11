@@ -1,37 +1,53 @@
 .flex-name {
     margin-top: 10px;
-    margin-bottom: 50px;
-    text-align: left;
     font-size: 20px;
     font-weight: 700;
+}
+
+.flex-description {
+    margin-top: -20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.flex-description, .flex-name, .places-description {
+    text-align: left;
 }
 
 .places-description {
     position: relative;
     padding-top: 20px;
-    text-align: left;
     padding: 20px;
 }
 
+.card {
+    transition: all 0.25s ease-out;
+}
+
 .card:hover {
-    transition: all 1s ease-in;
+    transition: all 0.5s ease-in;
     -webkit-filter: blur(5px); /* Chrome, Safari, Opera */
     filter: blur(5px);
 }
 
 .grow {
     border-radius: 5px;
-    height: 165px;
+    max-height: 165px;
     width: 300px;
     float: left;
     position: relative;
     text-align: center;
     overflow: hidden;
     background-color: rgba(206, 206, 206, 0.2);
+    transition: max-height 0.9s ease-out;
+    transition-delay: 0.9s;
 }
 
 .grow:hover {
-    height: fit-content;
+    max-height: 1500px;
+    transition: max-height 0.5s ease-in;
+    transition-delay: 0.5s;
 }
 
 @keyframes fadeIn {

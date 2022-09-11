@@ -1,12 +1,19 @@
 import React from "react";
-import { SliderData } from "./SliderData";
 import { useState } from "react";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
 import './ImageSlider.css'
-import Gdisplay from "../functions/Gdisplay";
 
 const ImageSlider = (props) => {
     const [current, setCurrent] = useState(0)
+
+    if (props.data[props.nb].galerie === undefined) {
+        return (
+            <>
+                <img src={props.data[props.nb].media.url} alt="whatever" className="image"/>
+            </>
+        );
+    }
+
     const length = props.data[props.nb].galerie.length
 
     const nextSlide = () => {
@@ -17,9 +24,9 @@ const ImageSlider = (props) => {
         setCurrent(current === 0 ? length - 1 : current - 1)
     }
 
-    if(!Array.isArray(props.slides) || props.slides.length <= 0) {
-        return null;
-    }
+    // if(!Array.isArray(props.slides) || props.slides.length <= 0) {
+    //     return null;
+    // }
 
     return (
         <section className="slider">
@@ -31,7 +38,7 @@ const ImageSlider = (props) => {
                         {index === current && (
                             <>
                                 <img src={props.data[props.nb].galerie[index].url} alt="whatever" className="image"/>
-                                <p>{length}</p>
+                                <p style={{color: "white"}}>{index+1}/{length}<br/></p>
                             </>
                         )}
                     </div>
