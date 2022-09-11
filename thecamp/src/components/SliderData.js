@@ -1,4 +1,6 @@
-export const SliderData = [
+import Gdisplay from "../functions/Gdisplay"
+export const SliderData = 
+[
     {
         image: 'https://uploads-ssl.webflow.com/60939f64c1ec7def6f85ca0c/62cec926448ae60773f6cbc8_theatre-de-verdure.jpeg'
     },
