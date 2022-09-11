@@ -12,6 +12,7 @@ function App() {
             <Route path="/" element={
               <>
                 <Places />
+                {/* <ImageSlider slides={SliderData}/> */}
               </>
             } />
           </Routes>
