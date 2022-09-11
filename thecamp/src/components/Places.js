@@ -11,7 +11,7 @@ class Places extends React.Component {
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" /> 
         <div class="container text-center tab-pane toto">
           <div class="row">
-            <div class="col-3">
+            <div class="col-6">
               <Card data={this.props.data} nb="29"/>
               <Card data={this.props.data} nb="28"/>
               <Card data={this.props.data} nb="22"/>
@@ -24,7 +24,7 @@ class Places extends React.Component {
               <Card data={this.props.data} nb="11"/>
             </div>
 
-            <div class="col-3">
+            <div class="col-6">
               <Card data={this.props.data} nb="10"/>
               <Card data={this.props.data} nb="13"/>
               <Card data={this.props.data} nb="5"/>

@@ -19,7 +19,7 @@ class Fetch extends React.Component {
         /*global fetch */
         fetch('https://api-gw.thecamp.fr/webflow/places')
             .then(data => data.json())
-            .then(data => this.setState({ ApiData: data }, () => console.log(this.state.ApiData)));
+            .then(data => this.setState({ ApiData: data }));
     }
 
     render() {

@@ -9,6 +9,8 @@
 .places-description {
     position: relative;
     padding-top: 20px;
+    text-align: left;
+    padding: 20px;
 }
 
 .card:hover {
@@ -18,14 +20,14 @@
 }
 
 .grow {
-    border-radius: 10px;
-    height: 173px;
+    border-radius: 5px;
+    height: 165px;
     width: 300px;
     float: left;
     position: relative;
     text-align: center;
     overflow: hidden;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(206, 206, 206, 0.2);
 }
 
 .grow:hover {
