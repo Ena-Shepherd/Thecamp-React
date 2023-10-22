@@ -31,6 +31,12 @@
     filter: blur(5px);
 }
 
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Space evenly between cards */
+    flex-wrap: wrap; /* Wrap to the next line if needed */
+}
+
 .grow {
     border-radius: 5px;
     width: 100%;
@@ -41,6 +47,7 @@
     background-color: rgba(206, 206, 206, 0.2);
     transition: max-height 0.9s ease-out;
     transition-delay: 0.9s;
+    margin: 0 0 30px 0;
 }
 
 .grow:hover {
